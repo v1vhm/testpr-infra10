@@ -13,10 +13,11 @@
 - identifier: testpr-infra10
   title: infra10
   blueprint: service
+  icon: Terraform
   properties:
     short_name: infra10
+  relations:
     product: TESTPR
     githubRepository: v1vhm/testpr-infra10
     service_template: terraform_service
     service_cost_centre: 123456
-
