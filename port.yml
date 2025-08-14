@@ -20,4 +20,4 @@
     product: TESTPR
     githubRepository: v1vhm/testpr-infra10
     service_template: terraform_service
-    service_cost_centre: 123456
+    service_cost_centre: "123456"
