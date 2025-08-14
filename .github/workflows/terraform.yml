@@ -18,7 +18,7 @@ jobs:
       plan_matrix: ${{ steps.set-matrix.outputs.plan_matrix }}
       apply_matrix: ${{ steps.set-matrix.outputs.apply_matrix }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - id: changes
@@ -71,7 +71,7 @@ jobs:
       ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Create plugin cache
         run: |
@@ -173,7 +173,7 @@ jobs:
       ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Create plugin cache
         run: |
