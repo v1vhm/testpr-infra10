@@ -1,7 +1,8 @@
 - identifier: v1vhm/testpr-infra10
   title: testpr-infra10
   blueprint: githubRepository
-  teams: cloud-platform-team
+  teams:
+    - cloud-platform-team
   properties:
     readme: file://README.md
     url: https://github.com/v1vhm/testpr-infra10
