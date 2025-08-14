@@ -1,0 +1,21 @@
+- identifier: v1vhm/testpr-infra10
+  title: testpr-infra10
+  blueprint: githubRepository
+  properties:
+    readme: file://README.md
+    url: https://github.com/v1vhm/testpr-infra10
+    defaultBranch: main
+    visibility: public
+    sshUrl: ssh://github.com/v1vhm/testpr-infra10.git
+  relations:
+    githubTeams:
+      - cloud-platform-team
+- identifier: testpr-infra10
+  title: infra10
+  blueprint: service
+  properties:
+    short_name: infra10
+    product: TESTPR
+    githubRepository: v1vhm/testpr-infra10
+    service_template: terraform_service
+    service_cost_centre: 123456
